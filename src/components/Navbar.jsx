@@ -1,12 +1,10 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 import { navInfoLinks, navMainLinks } from "../constants";
 
 import { ruLogoImage } from "../lib";
-import { useRef } from "react";
-import { useEffect } from "react";
 
 const Navbar = () => {
     const linkRef = useRef();
@@ -52,15 +50,13 @@ const Navbar = () => {
             </div>
             <div ref={linkRef} className="w-[58%] h-full flex relative">
                 {navMainLinks.map((link, index) => (
-                    <>
-                        <div key={link.id} index={index} onMouseEnter={() => {
-                            setDropDown({...link})
-                            setDropdownVisible(true)
-                        }} className="w-1/5 h-full hover:bg-[#460012] grid place-items-center text-white relative group cursor-pointer">
-                            <p className="font-light">{link.name}</p>
-                            <span className="absolute bottom-3 mx-auto left-0 right-0 w-10 h-[5px] bg-white rounded-full opacity-0 group-hover:opacity-100" />
-                        </div>
-                    </>
+                    <div key={link.id} index={index} onMouseEnter={() => {
+                        setDropDown({...link})
+                        setDropdownVisible(true)
+                    }} className="w-1/5 h-full hover:bg-[#460012] grid place-items-center text-white relative group cursor-pointer">
+                        <p className="font-light">{link.name}</p>
+                        <span className="absolute bottom-3 mx-auto left-0 right-0 w-10 h-[5px] bg-white rounded-full opacity-0 group-hover:opacity-100" />
+                    </div>
                 ))}
                 <div style={{
                     position: "absolute",

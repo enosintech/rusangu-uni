@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="w-full h-[35%] bg-white px-56 flex flex-col">
             <div className="w-full h-full flex flex-col flex-wrap">
                 {footerUsefulLinks.map((link, index) => (
-                    <div className="h-1/2 w-1/4 ml-1 mr-1 flex items-center gap-x-2">
+                    <div key={link.id} index={index} className="h-1/2 w-1/4 ml-1 mr-1 flex items-center gap-x-2">
                         <p className="font-light text-[14px] cursor-pointer hover:underline">{link.name}</p>
                         <FontAwesomeIcon icon={faChevronRight} size="xs" />
                     </div>
