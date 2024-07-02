@@ -1,3 +1,31 @@
+export const eventData = [
+    {
+        id: 1,
+        event: "2024 Graduation Ceremony for August 23 Semester",
+        date: "23rd Sept",
+    },
+    {
+        id: 2,
+        event: "2024 October Campus Bonfire",
+        date: "28th Oct",
+    },
+    {
+        id: 3,
+        event: "2024 End of Year RU Awards Ceremony",
+        date: "15th Dec",
+    },
+    {
+        id: 4,
+        event: "2025 February Intake Open Day",
+        date: "7th Jan",
+    },
+    {
+        id: 5,
+        event: "Executive Visit from His Excellency President Hichilema Hakainde - 2025",
+        date: "23rd Feb",
+    },
+]
+
 export const footerLinks = [
     {
         id: 1,
@@ -71,6 +99,33 @@ export const footerUsefulLinks = [
         id: 7,
         name: "Alumni Association",
         link: "",
+    },
+]
+
+export const latestNews = [
+    {
+        id: 1,
+        news: "RU Alumni donate food to flood victims",
+        image: "",
+        alt: "people at donation center"
+    },
+    {
+        id: 2,
+        news: "2023 Graduation Ceremony",
+        image: "",
+        alt: "Graduation Hall"
+    },
+    {
+        id: 3,
+        news: "Rusangu University Commemorates farmers day by exhibiting at Lusaka Agricultural Commercial Show",
+        image: "",
+        alt: "Booth at Lusaka Agricultural Commercial Show"
+    },
+    {
+        id: 4,
+        news: "VC Installation Service",
+        image: "",
+        alt: "Gathered at a ceremony"
     },
 ]
 

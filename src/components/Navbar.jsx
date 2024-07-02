@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
@@ -27,35 +28,46 @@ const Navbar = () => {
             setDropdownVisible(false)
         }} className="w-full h-[30%] px-56 flex items-center justify-between bg-white">
             <div className="flex items-center justify-evenly h-full w-fit">
-                <p className="font-bold text-gray-800 mr-4">Infomation For:</p>
+                <p className="font-bold text-gray-800 mr-4">Information For:</p>
                 {navInfoLinks.map((link, index) => (
                     <p key={link.id} index={index} className="tracking-wide text-primary hover:bg-primary hover:text-white w-fit px-3 grid place-items-center h-full transition-all cursor-pointer">
                         {link.name}
                     </p>
                 ))}
             </div>
-            <div className="px-4 w-fit h-full grid place-items-center bg-[#c30031] hover:bg-primary text-white cursor-pointer">
-                <p className="font-extrabold">Login to RU Portal</p>
+            <div className="flex flex-row-reverse h-full">
+                <div className="w-[55%] h-full flex items-center bg-black">
+                    <input className="w-[75%] h-full bg-white px-2 placeholder:text-black outline-none" placeholder="Search" />
+                    <button className="w-[25%] h-full bg-secondary flex items-center justify-center hover:bg-primary cursor-pointer active:opacity-70">
+                        <FontAwesomeIcon icon={faSearch} color="white" size="lg"/>
+                    </button>
+                </div>
+                <div className="px-4 w-[45%] h-full grid place-items-center bg-secondary hover:bg-primary text-white cursor-pointer active:opacity-70">
+                    <p className="font-extrabold">Login to RU Portal</p>
+                </div>
             </div>
         </div>
-        <div className="w-full h-[70%] bg-primary px-56 flex items-center">
-            <div onMouseEnter={() => {
+        <div className="w-full h-[70%] bg-primary px-56 flex items-center justify-between">
+            <Link onMouseEnter={() => {
                 setDropdownVisible(false)
             }} className="logo w-[20%] flex items-center text-white">
                 <img src={ruLogoImage} className="size-20 object-contain" />
-                <div className="flex flex-col font-black tracking-tight text-lg">
+                <div className="flex flex-col font-black text-lg">
                     <p>RUSANGU</p>
                     <p>UNIVERSITY</p>
                 </div>
-            </div>
+            </Link>
+            <div className="h-full w-[22%]" onMouseEnter={() => {
+                setDropdownVisible(false)
+            }}></div>
             <div ref={linkRef} className="w-[58%] h-full flex relative">
                 {navMainLinks.map((link, index) => (
                     <div key={link.id} index={index} onMouseEnter={() => {
                         setDropDown({...link})
                         setDropdownVisible(true)
-                    }} className="w-1/5 h-full hover:bg-[#460012] grid place-items-center text-white relative group cursor-pointer">
+                    }} className={`w-1/5 h-full hover:bg-[#460012] grid place-items-center text-white relative group cursor-pointer ${dropdownVisible && dropDown.id === link.id ? "bg-[#460012]" : ""}`}>
                         <p className="font-light">{link.name}</p>
-                        <span className="absolute bottom-3 mx-auto left-0 right-0 w-10 h-[5px] bg-white rounded-full opacity-0 group-hover:opacity-100" />
+                        <span className={`${dropdownVisible && dropDown.id === link.id ? "opacity-100" : "opacity-0" } absolute bottom-3 mx-auto left-0 right-0 w-10 h-[5px] bg-white rounded-full opacity-0 group-hover:opacity-100`} />
                     </div>
                 ))}
                 <div style={{
@@ -73,16 +85,6 @@ const Navbar = () => {
                             <p key={preview.id} index={index} className={`transition-all duration-200 hover-action text-primary font-light text-lg`}>{preview.name}</p>
                         ))}
                     </div>
-                </div>
-            </div>
-            <div onMouseEnter={() => {
-                setDropdownVisible(false)
-            }} className="w-[22%] h-full flex items-center justify-center">
-                <div className="w-[95%] h-[43%] flex items-center pl-[1px] bg-black">
-                    <input className="w-[80%] h-[95%] bg-white px-2 placeholder:text-black outline-none" placeholder="Search" />
-                    <button className="w-[20%] h-full bg-black flex items-center justify-center hover-action">
-                        <FontAwesomeIcon icon={faSearch} color="white" size="lg"/>
-                    </button>
                 </div>
             </div>
         </div>
