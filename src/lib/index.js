@@ -1,4 +1,5 @@
 import rulogo from "/assets/icons/rulogo.png";
+import arrow from "/assets/icons/arrow.png";
 
 import rusanguCampus from "/assets/images/rusanguCampus.webp";
 import slideshow1 from "/assets/images/slideshow1.webp";
@@ -20,6 +21,7 @@ import highlightVideo4 from "/assets/videos/highlight4.mp4";
 import scroll from "../assets/animations/scroll.json";
 
 export const ruLogoImage = rulogo;
+export const arrowImg = arrow;
 
 export const rusanguCampusImg = rusanguCampus;
 export const slideshow1IImg = slideshow1;

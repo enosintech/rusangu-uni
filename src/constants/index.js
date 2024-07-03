@@ -108,7 +108,7 @@ export const highlightSlides = [
     {
         id: 1,
         video: highlightVideo1Main,
-        videoDuration: 5.5,
+        videoDuration: 5,
     },
     {
         id: 2,
