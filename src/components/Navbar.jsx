@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <nav onMouseLeave={() => {
         setDropdownVisible(false)
-    }} className="w-full h-[160px] flex flex-col fixed top-0 left-0 z-[9999]">
+    }} className="w-full h-[160px] flex flex-col fixed top-0 left-0 z-[9999] deep-shadow">
         <div onMouseEnter={() => {
             setDropdownVisible(false)
         }} className="w-full h-[30%] px-56 flex items-center justify-between bg-white">

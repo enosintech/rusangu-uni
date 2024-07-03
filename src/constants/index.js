@@ -1,3 +1,5 @@
+import { agricBoothImg, alumniDonateImg, grad23Img, highlightVideo1Main, highlightVideo2Main, highlightVideo3Main, highlightVideo4Main, vcInstallImg } from "../lib"
+
 export const eventData = [
     {
         id: 1,
@@ -102,30 +104,57 @@ export const footerUsefulLinks = [
     },
 ]
 
-export const latestNews = [
+export const highlightSlides = [
     {
         id: 1,
-        news: "RU Alumni donate food to flood victims",
-        image: "",
-        alt: "people at donation center"
+        video: highlightVideo1Main,
+        videoDuration: 5.5,
+    },
+    {
+        id: 2,
+        video: highlightVideo2Main,
+        videoDuration: 15,
+    },
+    {
+        id: 3,
+        video: highlightVideo3Main,
+        videoDuration: 14,
+    },
+    {
+        id: 4,
+        video: highlightVideo4Main,
+        videoDuration: 4,
+    },
+]
+
+export const latestNews = [
+    {
+        id: 4,
+        news: "VC Installation Service",
+        image: vcInstallImg,
+        alt: "Gathered at a ceremony",
+        date: "5th September, 2022"
     },
     {
         id: 2,
         news: "2023 Graduation Ceremony",
-        image: "",
-        alt: "Graduation Hall"
+        image: grad23Img,
+        alt: "Graduation Hall",
+        date: "4th September, 2022"
+    },
+    {
+        id: 1,
+        news: "RU Alumni donate food to flood victims",
+        image: alumniDonateImg,
+        alt: "people at donation center",
+        date: "17th March, 2023"
     },
     {
         id: 3,
         news: "Rusangu University Commemorates farmers day by exhibiting at Lusaka Agricultural Commercial Show",
-        image: "",
-        alt: "Booth at Lusaka Agricultural Commercial Show"
-    },
-    {
-        id: 4,
-        news: "VC Installation Service",
-        image: "",
-        alt: "Gathered at a ceremony"
+        image: agricBoothImg,
+        alt: "Booth at Lusaka Agricultural Commercial Show",
+        date: "7th August, 2023"
     },
 ]
 
