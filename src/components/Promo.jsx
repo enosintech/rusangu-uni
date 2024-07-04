@@ -14,6 +14,9 @@ const Promo = () => {
             </div>
             <p className="text-white font-extrabold text-xl">Start Your Journey</p>
         </div>
+        <button className="w-fit h-fit absolute bottom-5 left-0 right-0 mx-auto bg-primary rounded-full px-7 hover-action py-3 text-white">
+          <p className="font-black text-2xl">APPLY TODAY</p>
+        </button>
       </div>
     </div>
   )

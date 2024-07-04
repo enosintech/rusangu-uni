@@ -1,9 +1,14 @@
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import gsap from "gsap";
 
 import { arrowImg } from "../lib";
 
+import { eventData, latestNews } from '../constants';
+
+import Stories from './Stories';
 import ImageSlideshow from "./ImageSlideshow";
 import News from "./News";
 import VideoCarousel from "./VideoCarousel";
@@ -33,7 +38,7 @@ const Hero = () => {
     tl.delay(6)
 
     tl.to(growDiv.current, {
-      clipPath: "circle(100% at 50% 90%)",
+      clipPath: "circle(100% at 50% 120%)",
       pointerEvents: "auto"
     })
 
@@ -41,24 +46,69 @@ const Hero = () => {
 
   return (
     <section ref={hero} className="w-full h-screen pt-[160px] relative hero">
-        <div className="absolute w-full h-full z-50 p-2 pointer-events-none">
-          <div ref={growDiv} className="w-full h-full bg-white pathClip grid place-items-center relative">
-            <div className="h-full pt-56 -translate-y-[7%] px-56">
-              <div className="flex gap-x-20 justify-center">
-                <div className="max-w-[40%]">
-                  <p className="text-primary text-5xl font-extrabold">Vision</p>
-                  <p className="text-3xl font-light tracking-tighter mt-5">To be a premier Christian University in Africa and beyond.</p>
+        <div className="absolute top-0 pt-[140px] translate-y-5 w-full h-full z-50 p-2 pointer-events-none">
+          <div ref={growDiv} className="w-full h-full bg-white pathClip grid place-items-center relative deep-shadow">
+            <div className='w-full h-full px-56 relative z-50 flex gap-x-5 mt-2 mb-10'>
+              <div className='w-[70%] h-full flex flex-col'>
+                <div className='w-full h-[20%] flex items-center'>
+                  <div className='tracking-tight mt-5'>
+                    <p className='font-light text-[14px]'>News and Stories from</p>
+                    <p className='text-3xl font-extrabold'>Campus</p>
+                  </div>
                 </div>
-                <div className="max-w-[60%]">
-                  <p className="text-primary text-5xl font-extrabold">Mission</p>
-                  <p className="text-3xl font-light tracking-tighter mt-5">To provide transformative quality wholistic tertiary education to students through modern teaching, learning and research that embraces the head, heart and hand.</p>
+                <div className='w-full h-[75%] flex gap-x-5'>
+                  <div className='w-[43%] h-full'>
+                  <div className='w-full h-full flex flex-col deep-shadow relative'>
+                      <div className='w-full h-full absolute'>
+                          <img className='w-full h-full object-cover' src={latestNews[0].image} alt={latestNews[0].alt}/>
+                          <div className='absolute w-full h-full top-0 left-0 bg-gradient-to-b from-transparent via-transparent to-black'></div>
+                      </div>
+                      <div className='w-full h-fit absolute bottom-3 text-white deep-shadow pl-3 pt-3'>
+                          <p className='text-justify max-w-[80%] font-black tracking-tight text-xl hover:underline cursor-pointer'>{latestNews[0].news}</p>
+                          <p className='font-light text-[14px] text-[rgba(255,255,255,0.9)]'>{latestNews[0].date}</p>
+                      </div>
+                  </div>
+                  </div>
+                  <div className='w-[57%] h-full gap-5 grid grid-cols-2 grid-rows-2'>
+                    <div>
+                      <Stories {...latestNews[1]}/>
+                    </div>
+                    <div>
+                      <Stories {...latestNews[2]}/>
+                    </div>
+                    <div>
+                      <Stories {...latestNews[3]}/>
+                    </div>
+                    <div>
+                      <Stories {...latestNews[1]}/>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="absolute bottom-40 flex items-center gap-x-2 left-0 right-0 mx-auto w-fit">
-              <p className="font-extrabold text-xl">FOUNDED IN 2003</p>
-              <span className="font-semibold">|</span>
-              <p className="font-light">EDUCATING FOR SERVICE</p>
+              <div className='w-[30%] h-full flex flex-col'>
+                <div className='w-full h-[20%] flex items-center'>
+                  <div className="tracking-tight mt-5">
+                    <p className='font-light text-[14px]'>Upcoming</p>
+                    <p className='text-3xl font-extrabold'>Events</p>
+                  </div>
+                </div>
+                <div className='w-full h-[75%] flex flex-col gap-y-4'>
+                  {eventData.map((event, idx) => (
+                    <div key={event.id} className={`w-full h-[25%] hover-action bg-white deep-shadow flex ${idx === 2 ? "opacity-60" : idx === 3 ? "opacity-30" : "opacity-100" } relative`}>
+                      {idx === 0 && 
+                        <p className='absolute top-1 right-10 font-extralight'>UP NEXT</p>
+                      }
+                      <div className='w-[85%] h-full flex flex-col justify-evenly px-4 py-1'>
+                        <p className='font-extrabold text-lg text-primary'>{event.date}</p>
+                        <p className='max-w-[90%] font-medium tracking-tight text-[16px]'>{event.event}</p>
+                      </div>
+                      <div className='w-[15%] h-full grid place-items-center'>
+                        <FontAwesomeIcon icon={faChevronRight} color="black" size="xl" />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -69,8 +119,11 @@ const Hero = () => {
               </div>
               <div className="w-1/2 h-full grid grid-cols-3 grid-rows-2 gap-2">
                 <div className="col-start-1 row-start-1 row-span-1 col-span-1 flex flex-col gap-y-2 text-white font-extrabold">
-                    <div className="w-full h-[60%] bg-primary p-3 text-center hover:bg-white transition-all group">
-                      <p className="group-hover:text-black transition-all">APPLICATIONS FOR THE SEPT 2024 SEMESTER ARE OPEN</p>
+                    <div className="w-full h-[60%] bg-primary p-3 text-center relative">
+                      <p>APPLICATIONS FOR THE SEPT 2024 SEMESTER ARE OPEN</p>
+                      <button className="absolute bottom-4 left-0 right-0 mx-auto group hover:bg-zinc-900 transition-all text-black w-fit h-fit px-5 py-2 rounded-full bg-white deep-shadow grid place-items-center">
+                        <p className="text-[14px] font-black group-hover:text-white transition-all">APPLY TODAY</p>
+                      </button>
                     </div>
                     <div className="w-full h-[40%] bg-zinc-900 text-center p-3 deep-shadow hover:bg-white group cursor-pointer transition-all">
                       <p className="group-hover:text-black transition-all">ACADEMIC PROGRAMS</p>

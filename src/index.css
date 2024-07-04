@@ -28,7 +28,7 @@ body {
 }
 
 .pathClip {
-  clip-path: circle(0% at 50% 90%);
+  clip-path: circle(0% at 50% 120%);
 }
 
 @layer utilities {

@@ -12,6 +12,12 @@ import agricBooth from "/assets/images/agricBooth.webp";
 import alumniDonate from "/assets/images/alumniDonate.webp";
 import vcInstall from "/assets/images/vcInstall.webp";
 import grad23 from "/assets/images/grad23.webp";
+import undergrad from "/assets/images/undergrad.webp"
+import postgrad from "/assets/images/postgrad.webp";
+import distance from '/assets/images/distance.webp';
+import unilife1 from "/assets/images/unilife1.webp";
+import unilife2 from "/assets/images/unilife2.webp";
+import unilife3 from "/assets/images/unilife3.webp";
 
 import highlightVideo1 from "/assets/videos/highlight1.mp4";
 import highlightVideo2 from "/assets/videos/highlight2.mp4";
@@ -34,6 +40,12 @@ export const agricBoothImg = agricBooth;
 export const alumniDonateImg = alumniDonate;
 export const grad23Img = grad23;
 export const vcInstallImg = vcInstall;
+export const undergradImg = undergrad;
+export const postgradImg = postgrad;
+export const distanceImg = distance;
+export const unilife1Img = unilife1;
+export const unilife2Img = unilife2;
+export const unilife3Img = unilife3;
 
 export const highlightVideo1Main = highlightVideo1;
 export const highlightVideo2Main = highlightVideo2;

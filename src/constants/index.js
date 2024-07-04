@@ -1,30 +1,67 @@
-import { agricBoothImg, alumniDonateImg, grad23Img, highlightVideo1Main, highlightVideo2Main, highlightVideo3Main, highlightVideo4Main, vcInstallImg } from "../lib"
+import { agricBoothImg, alumniDonateImg, distanceImg, grad23Img, highlightVideo1Main, highlightVideo2Main, highlightVideo3Main, highlightVideo4Main, postgradImg, undergradImg, unilife1Img, unilife2Img, unilife3Img, vcInstallImg } from "../lib"
+
+export const admissionData = [
+    {
+        id: 1,
+        number: "42",
+        text: "Courses Offered"
+    },
+    {
+        id: 2,
+        number: "4500",
+        text: "Students Enrolled"
+    },
+    {
+        id: 3,
+        number: "20",
+        text: "Different Countries"
+    },
+]
+
+export const academicData = [
+    {
+        id: 1,
+        text: "Rusangu University offers high-quality undergraduate education rooted in Christian values, preparing students for successful careers and meaningful lives of service.",
+        subText: "UNDERGRADUATE EDUCATION",
+        image: undergradImg,
+        alt: "undergraduate Image",
+    },
+    {
+        id: 2,
+        text: "Rusangu University provides top-tier postgraduate education centered on Christian principles, equipping students for thriving careers and purposeful contributions to society.",
+        subText: "POSTGRADUATE EDUCATION",
+        image: postgradImg,
+        alt: "postgraduate Image",
+    },
+    {
+        id: 3,
+        text: "Rusangu University boasts a proficient faculty delivering distance learning across all schools. These globally accredited programs aim to cultivate visionary leaders and foster innovative thinking among students.",
+        subText: "DISTANCE EDUCATION",
+        image: distanceImg,
+        alt: "distance learning Image"
+    },
+]
 
 export const eventData = [
     {
         id: 1,
-        event: "2024 Graduation Ceremony for August 23 Semester",
-        date: "23rd Sept",
+        event: "Graduation Ceremony for August 23 Semester",
+        date: "23rd Sept 2024",
     },
     {
         id: 2,
-        event: "2024 October Campus Bonfire",
-        date: "28th Oct",
+        event: "October Campus Bonfire",
+        date: "28th Oct 2024",
     },
     {
         id: 3,
-        event: "2024 End of Year RU Awards Ceremony",
-        date: "15th Dec",
+        event: "End of Year RU Awards Ceremony",
+        date: "15th Dec 2024",
     },
     {
         id: 4,
-        event: "2025 February Intake Open Day",
-        date: "7th Jan",
-    },
-    {
-        id: 5,
-        event: "Executive Visit from His Excellency President Hichilema Hakainde - 2025",
-        date: "23rd Feb",
+        event: "February Intake Open Day",
+        date: "7th Jan 2025",
     },
 ]
 
@@ -156,6 +193,13 @@ export const latestNews = [
         alt: "Booth at Lusaka Agricultural Commercial Show",
         date: "7th August, 2023"
     },
+    {
+        id: 5,
+        news: "Rusangu University Commemorates farmers day by exhibiting at Lusaka Agricultural Commercial Show",
+        image: agricBoothImg,
+        alt: "Booth at Lusaka Agricultural Commercial Show",
+        date: "7th August, 2023"
+    },
 ]
 
 export const navInfoLinks = [
@@ -281,5 +325,58 @@ export const navMainLinks = [
                 link: "",
             },
         ]
+    },
+]
+
+export const uniLifeData = [
+    {
+        id: 1,
+        image: unilife1Img,
+    },
+    {
+        id: 2,
+        image: unilife2Img,
+    },
+    {
+        id: 3,
+        image: unilife3Img,
+    },
+]
+
+export const schools = [
+    {
+        id: 6,
+        name: "School of Theology and Religious Studies",
+        link: "",
+    },
+    {
+        id: 7,
+        name: "School of Postgraduate Studies",
+        link: "",
+    },
+    {
+        id: 2,
+        name: "School of Education",
+        link: "",
+    },
+    {
+        id: 4,
+        name: "School of Humanities and Social Sciences",
+        link: "",
+    },
+    {
+        id: 3,
+        name: "School of Health Sciences",
+        link: "",
+    },
+    {
+        id: 1,
+        name: "School of Business",
+        link: "",
+    },
+    {
+        id: 5,
+        name: "School of Science and Technology",
+        link: "",
     },
 ]

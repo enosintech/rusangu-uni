@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
         <div className="w-full h-[25%] bg-black text-white px-56 flex items-center justify-between">
             <div className="flex gap-x-2 font-black">
-                <p>Rusangu University</p>
+                <p>A Seventh-day Adventist Institution</p>
                 <p className="font-extralight">© {new Date().getFullYear()} Rusangu University. Rusangu, Monze.</p>
             </div>
             <div onClick={() => {
