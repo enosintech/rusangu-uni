@@ -30,17 +30,17 @@ const ImageSlideshow = () => {
   return (
     <div className="w-full h-full relative">
 
-        <img className="w-full h-full absolute tpo-0 left-0 motiv object-cover z-[6]" src={slideshow1IImg} alt="girl in graduation gown"/>
+        <img className="w-full h-full absolute top-0 left-0 motiv object-cover z-[6]" src={slideshow1IImg} alt="girl in graduation gown"/>
         
-        <img className="w-full h-full absolute tpo-0 left-0 motiv object-cover z-[5] " src={slideshow2Img} alt="nursing school" />
+        <img className="w-full h-full absolute top-0 left-0 motiv object-cover z-[5] " src={slideshow2Img} alt="nursing school" />
 
-        <img className="w-full h-full absolute tpo-0 left-0 motiv object-cover z-[4]" src={slideshow3Img} alt="graduating class" />
+        <img className="w-full h-full absolute top-0 left-0 motiv object-cover z-[4]" src={slideshow3Img} alt="graduating class" />
 
-        <img className="w-full h-full absolute tpo-0 left-0 motiv object-cover z-[3]" src={slideshow4Img} alt="students in park" />
+        <img className="w-full h-full absolute top-0 left-0 motiv object-cover z-[3]" src={slideshow4Img} alt="students in park" />
 
-        <img className="w-full h-full absolute tpo-0 left-0 motiv object-cover z-[2]" src={slideshow5Img} alt="foreign student in library" />
+        <img className="w-full h-full absolute top-0 left-0 motiv object-cover z-[2]" src={slideshow5Img} alt="foreign student in library" />
 
-        <img className="w-full h-full absolute tpo-0 left-0 motiv object-cover z-[1]" src={slideshow6Img} alt="student studying" />
+        <img className="w-full h-full absolute top-0 left-0 motiv object-cover z-[1]" src={slideshow6Img} alt="student studying" />
       
     </div>
   )

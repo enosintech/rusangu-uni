@@ -64,7 +64,7 @@ const Hero = () => {
                           <div className='absolute w-full h-full top-0 left-0 bg-gradient-to-b from-transparent via-transparent to-black'></div>
                       </div>
                       <div className='w-full h-fit absolute bottom-3 text-white deep-shadow pl-3 pt-3'>
-                          <p className='text-justify max-w-[80%] font-black tracking-tight text-xl hover:underline cursor-pointer'>{latestNews[0].news}</p>
+                          <p className='text-justify max-w-[80%] font-extrabold text-xl hover:underline cursor-pointer'>{latestNews[0].news}</p>
                           <p className='font-light text-[14px] text-[rgba(255,255,255,0.9)]'>{latestNews[0].date}</p>
                       </div>
                   </div>
@@ -129,7 +129,7 @@ const Hero = () => {
                       <p className="group-hover:text-black transition-all">ACADEMIC PROGRAMS</p>
                     </div>
                 </div>
-                <div className="col-start-2 row-start-1 row-span-1 col-span-2 bg-red-500 deep-shadow">
+                <div className="col-start-2 row-start-1 row-span-1 col-span-2 bg-black deep-shadow">
                   <ImageSlideshow />
                 </div>
                 <div className="col-start-1 row-start-2 row-span-1 col-span-1 bg-primary px-2 pt-2 relative deep-shadow">

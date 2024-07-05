@@ -3,7 +3,7 @@ import { admissionData } from "../constants";
 const Admissions = () => {
   return (
     <div className="w-full h-[45vh] flex flex-col px-56 mt-14">
-        <div className="w-full h-[30%]">
+        <div className="w-full h-[30%] text-center">
           <p className="font-extrabold text-4xl">Admissions</p>
           <p className="mt-4 font-light tracking-tight text-xl">Choosing Rusangu University opens doors to self-discovery through its supportive community and diverse academic opportunities, empowering you from admission onward.</p>
         </div>

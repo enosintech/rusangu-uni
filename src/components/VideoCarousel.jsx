@@ -150,7 +150,7 @@ const VideoCarousel = () => {
         <div className="absolute z-20 left-2 top-0 bottom-0 my-auto flex flex-col gap-y-3 h-fit">
           {videoRef.current.map((_, index) => (
             <span key={index} ref={(el) => (videoDivRef.current[index] = el)} className="w-[11px] h-4 bg-[rgba(255,255,255,0.3)] rounded-full overflow-hidden relative deep-shadow">
-              <span className="absolute h-full w-full rounded-full youYes" ref={(el) => (videoSpanRef.current[index] = el)} />
+              <span className="absolute h-full w-full rounded-full youYes deep-shadow" ref={(el) => (videoSpanRef.current[index] = el)} />
             </span>
           ))}
         </div>

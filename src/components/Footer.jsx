@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faChevronRight, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 import { footerLinks, footerUsefulLinks } from "../constants";
@@ -12,6 +12,7 @@ const Footer = () => {
             <div className="flex items-center justify-center gap-x-4">
                 <a className="hover-action"><FontAwesomeIcon icon={faFacebook} size="2xl" /></a>
                 <a className="hover-action"><FontAwesomeIcon icon={faInstagram} size="2xl" /></a>
+                <a className="hover-action"><FontAwesomeIcon icon={faYoutube} size="2xl" /></a>
                 <a className="hover-action"><FontAwesomeIcon icon={faXTwitter} size="2xl" /></a>
             </div>
         </div>

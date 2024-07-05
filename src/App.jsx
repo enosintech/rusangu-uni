@@ -11,6 +11,8 @@ const Homescreen = lazy(() => import("./screens/Homescreen"));
 
 gsap.registerPlugin(ScrollTrigger);
 
+ScrollTrigger.normalizeScroll(true);
+
 const App = () => {
 
   const [ loading, setLoading ] = useState(true);
