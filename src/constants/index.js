@@ -16,6 +16,11 @@ export const admissionData = [
         number: "20",
         text: "Different Countries"
     },
+    {
+        id: 4,
+        number: "3000",
+        text: "Alumni"
+    },
 ]
 
 export const academicData = [
@@ -345,8 +350,18 @@ export const uniLifeData = [
 
 export const schools = [
     {
+        id: 4,
+        name: "School of Humanities and Social Sciences",
+        link: "",
+    },
+    {
         id: 6,
         name: "School of Theology and Religious Studies",
+        link: "",
+    },
+    {
+        id: 5,
+        name: "School of Science and Technology",
         link: "",
     },
     {
@@ -355,28 +370,18 @@ export const schools = [
         link: "",
     },
     {
-        id: 2,
-        name: "School of Education",
-        link: "",
-    },
-    {
-        id: 4,
-        name: "School of Humanities and Social Sciences",
-        link: "",
-    },
-    {
         id: 3,
         name: "School of Health Sciences",
         link: "",
     },
     {
-        id: 1,
-        name: "School of Business",
+        id: 2,
+        name: "School of Education",
         link: "",
     },
     {
-        id: 5,
-        name: "School of Science and Technology",
+        id: 1,
+        name: "School of Business",
         link: "",
     },
 ]

@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 import { navInfoLinks, navMainLinks } from "../constants";
 
@@ -23,17 +23,17 @@ const Navbar = () => {
   return (
     <nav onMouseLeave={() => {
         setDropdownVisible(false)
-    }} className="w-full h-[160px] flex flex-col fixed top-0 left-0 z-[9999] deep-shadow">
+    }} className="w-full h-[130px] flex flex-col fixed top-0 left-0 z-[9999] deep-shadow">
         <div onMouseEnter={() => {
             setDropdownVisible(false)
         }} className="w-full h-[30%] px-56 flex items-center justify-between bg-white">
-            <div className="flex items-center justify-evenly h-full w-fit">
-                <p className="font-bold text-gray-800 mr-4">Information For:</p>
-                {navInfoLinks.map((link, index) => (
-                    <p key={link.id} index={index} className="tracking-wide text-primary hover:bg-primary hover:text-white w-fit px-3 grid place-items-center h-full transition-all cursor-pointer">
-                        {link.name}
-                    </p>
-                ))}
+            <div className="flex w-fit h-full items-center gap-x-2">
+                <p className="font-extrabold text-[14px] tracking-tight hover:text-secondary cursor-pointer">APPLY NOW</p>
+                <span>|</span>
+                <div className="flex items-center gap-x-2">
+                    <FontAwesomeIcon icon={faPhone} size="md" />
+                    <p className="tracking-tight text-[14px]">+ 0213 255 471</p>
+                </div>
             </div>
             <div className="flex flex-row-reverse h-full">
                 <div className="w-[55%] h-full flex items-center bg-black">
@@ -43,7 +43,7 @@ const Navbar = () => {
                     </button>
                 </div>
                 <div className="px-4 w-[45%] h-full grid place-items-center bg-secondary hover:bg-primary text-white cursor-pointer active:opacity-70">
-                    <p className="font-extrabold">Login to RU Portal</p>
+                    <p className="font-extrabold text-[15px]">Login to RU Portal</p>
                 </div>
             </div>
         </div>
@@ -51,8 +51,8 @@ const Navbar = () => {
             <Link onMouseEnter={() => {
                 setDropdownVisible(false)
             }} className="logo w-[20%] flex items-center text-white">
-                <img src={ruLogoImage} className="size-20 object-contain" />
-                <div className="flex flex-col font-black text-lg">
+                <img src={ruLogoImage} className="size-[65px] object-contain" />
+                <div className="flex flex-col font-black text-[16px">
                     <p>RUSANGU</p>
                     <p>UNIVERSITY</p>
                 </div>
