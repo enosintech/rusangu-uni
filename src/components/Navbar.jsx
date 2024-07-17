@@ -52,7 +52,7 @@ const Navbar = () => {
                 setDropdownVisible(false)
             }} className="logo w-[20%] flex items-center text-white">
                 <img src={ruLogoImage} className="size-[65px] object-contain" />
-                <div className="flex flex-col font-black text-[16px">
+                <div className="flex flex-col font-black text-[1.05vw]">
                     <p>RUSANGU</p>
                     <p>UNIVERSITY</p>
                 </div>
@@ -66,7 +66,7 @@ const Navbar = () => {
                         setDropDown({...link})
                         setDropdownVisible(true)
                     }} className={`w-1/5 h-full hover:bg-[#460012] grid place-items-center text-white relative group cursor-pointer ${dropdownVisible && dropDown.id === link.id ? "bg-[#460012]" : ""}`}>
-                        <p className="font-light">{link.name}</p>
+                        <p className="font-light text-[1vw]">{link.name}</p>
                         <span className={`${dropdownVisible && dropDown.id === link.id ? "opacity-100" : "opacity-0" } absolute bottom-3 mx-auto left-0 right-0 w-10 h-[5px] bg-white rounded-full opacity-0 group-hover:opacity-100`} />
                     </div>
                 ))}
