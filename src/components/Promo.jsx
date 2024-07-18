@@ -33,12 +33,12 @@ const Promo = () => {
             <div onClick={() => {
               setPromoVideoVisible(true)
             }} className="border-4 border-white rounded-full grid place-items-center w-14 h-14 hover:bg-primary hover:border-none transition-all cursor-pointer">
-                <FontAwesomeIcon icon={faPlay} color="white" size="xl" />
+                <FontAwesomeIcon icon={faPlay} color="white" className="text-[1.4vw]" />
             </div>
-            <p className="text-white font-extrabold text-xl">Start Your Journey</p>
+            <p className="text-white font-extrabold text-[1.2vw]">Start Your Journey</p>
         </div>
         <button className="w-fit h-fit absolute bottom-5 left-0 right-0 mx-auto bg-primary rounded-full px-7 hover-action py-3 text-white">
-          <p className="font-black text-2xl">APPLY TODAY</p>
+          <p className="font-black text-[1.5vw]">APPLY TODAY</p>
         </button>
       </div>
     </div>

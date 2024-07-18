@@ -1,4 +1,5 @@
-import { agricBoothImg, alumniDonateImg, distanceImg, grad23Img, highlightVideo1Main, highlightVideo2Main, highlightVideo3Main, highlightVideo4Main, postgradImg, undergradImg, unilife1Img, unilife2Img, unilife3Img, vcInstallImg } from "../lib"
+import { faBook, faGlobe, faGraduationCap, faHeartPulse } from "@fortawesome/free-solid-svg-icons";
+import { agricBoothImg, alumniDonateImg, distanceImg, grad23Img, highlightVideo1Main, highlightVideo2Main, highlightVideo3Main, highlightVideo4Main, postgradImg, slideshow1IImg, slideshow2Img, slideshow4Img, slideshow5Img, slideshow6Img, undergradImg, unilife1Img, unilife2Img, unilife3Img, vcInstallImg } from "../lib"
 
 export const admissionData = [
     {
@@ -330,6 +331,37 @@ export const navMainLinks = [
                 link: "",
             },
         ]
+    },
+]
+
+export const navOptions = [
+    {
+        id: 1,
+        icon: faBook,
+        name: "STUDY",
+        text: "RU provides career-focused and life shaping education to its graduates.",
+        image: slideshow6Img,
+    },
+    {
+        id: 2,
+        icon: faGlobe,
+        name: "EXPERIENCE",
+        text: "Many call our university home, creating a diverse alumni of all ages.",
+        image: slideshow4Img,
+    },
+    {
+        id: 3,
+        icon: faHeartPulse,
+        name: "IMPACT",
+        text: "We provide a student experience preparing graduates for a career and eternity.",
+        image: slideshow2Img,
+    },
+    {
+        id: 4,
+        icon: faGraduationCap,
+        name: "ALUMNI",
+        text: "Our graduates serve in ministry, medicine and many organizations across the world.",
+        image: slideshow1IImg,
     },
 ]
 

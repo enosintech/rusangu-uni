@@ -19,35 +19,13 @@ const Hero = () => {
   const growDiv = useRef();
   const hideDiv = useRef();
 
-  // useGSAP(() => {
-  //   const tl = gsap.timeline({
-  //     defaults: {
-  //       ease: "none"
-  //     },
-  //     scrollTrigger: {
-  //       trigger: hero.current,
-  //       start: "clamp(top top)",
-  //       end: () => "+=" + hero.current.offsetHeight * 2,
-  //       pin: true,
-  //       scrub: true,
-  //       pinSpacing: true,
-  //       anticipatePin: true
-  //     }
-  //   })
-
-  //   tl.delay(6)
-
-  //   tl.to(growDiv.current, {
-  //     clipPath: "circle(100% at 50% 120%)",
-  //     pointerEvents: "auto"
-  //   })
-
-  // }, [])
-
   return (
-    <section ref={hero} className="w-full h-screen pt-[160px] relative hero">
-        <div ref={hideDiv} className="w-full h-full p-2">
-            
+    <section ref={hero} className="w-full h-screen pt-[130px] relative hero">
+        <div ref={hideDiv} className="w-full h-full px-2 pt-2">
+            <div className="w-full h-full overflow-hidden bg-black">
+              {/* <VideoCarousel /> */}
+
+            </div>
         </div> 
     </section>
   )

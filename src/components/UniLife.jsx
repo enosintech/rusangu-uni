@@ -35,7 +35,7 @@ const UniLife = () => {
   }
 
   return (
-    <div className='w-full h-[55vh] bg-primary relative px-56 text-white flex items-end justify-end pb-14'>
+    <div className='w-full h-[45vh] relative px-56 flex items-end justify-end pb-14 parallax'>
       
     </div>
   )

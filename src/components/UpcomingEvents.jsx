@@ -9,10 +9,10 @@ import Stories from './Stories';
 const UpcomingEvents = () => {
   return (
     <div className='w-full h-[100vh] relative bg-white'>
-      <div className='w-full h-full px-56 relative z-50 flex gap-x-5 mt-2 mb-10'>
+      <div className='w-full h-full common-padding relative z-50 flex gap-x-5 mt-2 mb-10'>
               <div className='w-[70%] h-full flex flex-col'>
                 <div className='w-full h-[20%] flex items-center bg-primary mb-2'>
-                  <div className='tracking-tight mt-5 text-3xl font-extrabold text-white px-4'>
+                  <div className='tracking-tight mt-5 text-[2vw] leading-none font-extrabold text-white px-4'>
                     <p>News and Stories from</p>
                     <p>Campus</p>
                   </div>
@@ -25,8 +25,8 @@ const UpcomingEvents = () => {
                           <div className='absolute w-full h-full top-0 left-0 bg-gradient-to-b from-transparent via-transparent to-black'></div>
                       </div>
                       <div className='w-full h-fit absolute bottom-3 text-white deep-shadow pl-3 pt-3'>
-                          <p className='text-justify max-w-[80%] font-extrabold text-xl hover:underline cursor-pointer'>{latestNews[0].news}</p>
-                          <p className='font-light text-[14px] text-[rgba(255,255,255,0.9)]'>{latestNews[0].date}</p>
+                          <p className='text-justify max-w-[80%] font-extrabold text-[1.2vw] hover:underline cursor-pointer truncate'>{latestNews[0].news}</p>
+                          <p className='font-light text-[0.8vw] text-[rgba(255,255,255,0.9)]'>{latestNews[0].date}</p>
                       </div>
                   </div>
                   </div>
@@ -48,7 +48,7 @@ const UpcomingEvents = () => {
               </div>
               <div className='w-[30%] h-full flex flex-col'>
                 <div className='w-full h-[20%] flex items-center bg-zinc-900 mb-2'>
-                  <div className="tracking-tight mt-5 text-3xl font-extrabold text-white px-4">
+                  <div className="tracking-tight mt-5 text-[2vw] leading-none font-extrabold text-white px-4">
                     <p>Upcoming</p>
                     <p>Events</p>
                   </div>
@@ -57,14 +57,14 @@ const UpcomingEvents = () => {
                   {eventData.map((event, idx) => (
                     <div key={event.id} className={`w-full h-[25%] hover-action bg-white deep-shadow flex relative`}>
                       {idx === 0 && 
-                        <p className='absolute top-1 right-10 font-extralight'>UP NEXT</p>
+                        <p className='absolute top-1 right-1 lg:right-3 2xl:right-10 font-extralight text-[1.1vw]'>UP NEXT</p>
                       }
                       <div className='w-[85%] h-full flex flex-col justify-evenly px-4 py-1'>
-                        <p className='font-extrabold text-lg text-primary'>{event.date}</p>
-                        <p className='max-w-[90%] font-medium tracking-tight text-[16px]'>{event.event}</p>
+                        <p className='font-extrabold text-[1.1vw] text-primary'>{event.date}</p>
+                        <p className='max-w-[90%] font-medium tracking-tight text-[0.95vw]'>{event.event}</p>
                       </div>
                       <div className='w-[15%] h-full grid place-items-center'>
-                        <FontAwesomeIcon icon={faChevronRight} color="black" size="xl" />
+                        <FontAwesomeIcon icon={faChevronRight} color="black" className='text-[1.2vw]' />
                       </div>
                     </div>
                   ))}

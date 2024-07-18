@@ -18,6 +18,7 @@ import distance from '/assets/images/distance.webp';
 import unilife1 from "/assets/images/unilife1.webp";
 import unilife2 from "/assets/images/unilife2.webp";
 import unilife3 from "/assets/images/unilife3.webp";
+import parallax from "/assets/images/parallaxImage.jpg";
 
 import highlightVideo1 from "/assets/videos/highlight1.mp4";
 import highlightVideo2 from "/assets/videos/highlight2.mp4";
@@ -46,6 +47,7 @@ export const distanceImg = distance;
 export const unilife1Img = unilife1;
 export const unilife2Img = unilife2;
 export const unilife3Img = unilife3;
+export const parallaxImg = parallax;
 
 export const highlightVideo1Main = highlightVideo1;
 export const highlightVideo2Main = highlightVideo2;

@@ -27,8 +27,11 @@ body {
   place-items: center;
 }
 
-.pathClip {
-  clip-path: circle(0% at 50% 120%);
+.parallax {
+  background-attachment:fixed;
+  background-image: url(/assets/images/parallaxImage.jpg);
+  background-position: center;
+  background-size: auto;
 }
 
 @layer utilities {
@@ -38,6 +41,10 @@ body {
 
   .hover-action {
     @apply cursor-pointer active:opacity-40 hover:opacity-75
+  }
+
+  .common-padding {
+    @apply 2xl:px-56 xl:px-48 lg:px-40 md:px-36 px-28
   }
 }
 
