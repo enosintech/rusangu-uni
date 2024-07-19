@@ -5,7 +5,7 @@ import { slideshow1IImg } from "../lib";
 
 const NavOptions = () => {
   return (
-    <div className="w-full h-[45vh] px-2">
+    <div className="w-full h-[45vh]">
       <div className="w-full h-full flex">
         {navOptions.map((item, idx) => (
             <div key={item.id} className="w-1/4 h-full relative group">
