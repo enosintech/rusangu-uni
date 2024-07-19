@@ -11,8 +11,8 @@ const Admissions = () => {
           <div className="w-full h-[80%] flex items-center justify-evenly">
             {admissionData.map((item, idx) => (
               <div key={item.id} className="flex flex-col items-center gap-y-2">
-                <p className="font-black text-[3.5vw]">{item.number} {idx !== 0 && <span className="">+</span>}</p>
-                <p className="font-light tracking-tight text-[1.1vw]">{item.text}</p>
+                <p className="font-black text-[3.5vw] text-primary">{item.number} {idx !== 0 && <span className="">+</span>}</p>
+                <p className="font-medium tracking-tight text-[1.1vw]">{item.text}</p>
               </div>
             ))}
           </div>

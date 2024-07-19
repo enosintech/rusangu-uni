@@ -1,5 +1,5 @@
 import { faBook, faGlobe, faGraduationCap, faHeartPulse } from "@fortawesome/free-solid-svg-icons";
-import { agricBoothImg, alumniDonateImg, distanceImg, grad23Img, highlightVideo1Main, highlightVideo2Main, highlightVideo3Main, highlightVideo4Main, postgradImg, slideshow1IImg, slideshow2Img, slideshow4Img, slideshow5Img, slideshow6Img, undergradImg, unilife1Img, unilife2Img, unilife3Img, vcInstallImg } from "../lib"
+import { agricBoothImg, alumniDonateImg, distanceImg, experienceImg, grad23Img, highlightVideo1Main, highlightVideo2Main, highlightVideo3Main, highlightVideo4Main, postgradImg, slideshow1IImg, slideshow2Img, slideshow4Img, slideshow5Img, slideshow6Img, undergradImg, unilife1Img, unilife2Img, unilife3Img, vcInstallImg } from "../lib"
 
 export const admissionData = [
     {
@@ -347,7 +347,7 @@ export const navOptions = [
         icon: faGlobe,
         name: "EXPERIENCE",
         text: "Many call our university home, creating a diverse alumni of all ages.",
-        image: slideshow4Img,
+        image: experienceImg,
     },
     {
         id: 3,
