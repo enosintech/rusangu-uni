@@ -28,7 +28,7 @@ const Navbar = () => {
             setDropdownVisible(false)
         }} className="w-full h-[30%] common-padding flex items-center justify-between bg-white">
             <div className="flex w-fit h-full items-center gap-x-2">
-                <p className="font-extrabold text-[0.9vw] tracking-tight hover:text-secondary cursor-pointer">APPLY NOW</p>
+                <p className="font-extrabold text-[0.9vw] tracking-tight">CONTACT US</p>
                 <span>|</span>
                 <div className="flex items-center gap-x-2">
                     <FontAwesomeIcon icon={faPhone} className="text-[1.1vw]" />
