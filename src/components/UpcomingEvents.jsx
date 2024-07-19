@@ -12,7 +12,7 @@ const UpcomingEvents = () => {
       <div className='w-full h-full common-padding relative z-50 flex gap-x-5 mt-2 mb-10'>
               <div className='w-[70%] h-full flex flex-col'>
                 <div className='w-full h-[20%] flex items-center bg-primary mb-2'>
-                  <div className='tracking-tight mt-5 text-[2vw] leading-none font-extrabold text-white px-4'>
+                  <div className='tracking-wide mt-5 text-[2vw] leading-none font-black text-white px-4'>
                     <p>News and Stories from</p>
                     <p>Campus</p>
                   </div>
@@ -25,8 +25,8 @@ const UpcomingEvents = () => {
                           <div className='absolute w-full h-full top-0 left-0 bg-gradient-to-b from-transparent via-transparent to-black'></div>
                       </div>
                       <div className='w-full h-fit absolute bottom-3 text-white deep-shadow pl-3 pt-3'>
-                          <p className='text-justify max-w-[80%] font-extrabold text-[1.2vw] hover:underline cursor-pointer truncate'>{latestNews[0].news}</p>
-                          <p className='font-light text-[0.8vw] text-[rgba(255,255,255,0.9)]'>{latestNews[0].date}</p>
+                          <p className='text-justify max-w-[80%] font-medium text-[1.2vw] hover:underline cursor-pointer truncate'>{latestNews[0].news}</p>
+                          <p className='text-[0.8vw] text-[rgba(255,255,255,0.9)]'>{latestNews[0].date}</p>
                       </div>
                   </div>
                   </div>
@@ -48,7 +48,7 @@ const UpcomingEvents = () => {
               </div>
               <div className='w-[30%] h-full flex flex-col'>
                 <div className='w-full h-[20%] flex items-center bg-zinc-900 mb-2'>
-                  <div className="tracking-tight mt-5 text-[2vw] leading-none font-extrabold text-white px-4">
+                  <div className="tracking-wide mt-5 text-[2vw] leading-none font-black text-white px-4">
                     <p>Upcoming</p>
                     <p>Events</p>
                   </div>

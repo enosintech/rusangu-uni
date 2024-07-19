@@ -28,22 +28,22 @@ const Navbar = () => {
             setDropdownVisible(false)
         }} className="w-full h-[30%] common-padding flex items-center justify-between bg-white">
             <div className="flex w-fit h-full items-center gap-x-2">
-                <p className="font-extrabold text-[0.9vw] tracking-tight">CONTACT US</p>
+                <p className="font-black text-[0.9vw] tracking-normal">CONTACT US</p>
                 <span>|</span>
                 <div className="flex items-center gap-x-2">
                     <FontAwesomeIcon icon={faPhone} className="text-[1.1vw]" />
                     <p className="tracking-tight text-[0.9vw]">+ 0213 255 471</p>
                 </div>
             </div>
-            <div className="flex flex-row-reverse h-full">
-                <div className="w-[55%] h-full flex items-center bg-black">
+            <div className="flex flex-row-reverse w-fit h-full">
+                <div className="w-fit h-full flex items-center bg-black">
                     <input className="w-[75%] h-full bg-white px-2 placeholder:text-black outline-none text-[0.95vw]" placeholder="Search" />
                     <button className="w-[25%] h-full bg-secondary flex items-center justify-center hover:bg-primary cursor-pointer active:opacity-70">
                         <FontAwesomeIcon icon={faSearch} color="white" className="text-[1.3vw]"/>
                     </button>
                 </div>
-                <div className="px-4 w-[45%] h-full grid place-items-center bg-secondary hover:bg-primary text-white cursor-pointer active:opacity-70">
-                    <p className="font-extrabold text-[0.80vw]">Login to RU Portal</p>
+                <div className="px-4 w-fit h-full grid place-items-center bg-secondary hover:bg-primary text-white cursor-pointer active:opacity-70">
+                    <p className="font-extrabold text-[1vw]">Login to RU Portal</p>
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
                 setDropdownVisible(false)
             }} className="logo w-[20%] flex items-center text-white">
                 <img src={ruLogoImage} className="size-[4vw] object-contain" />
-                <div className="flex flex-col font-black text-[1.05vw]">
+                <div className="flex flex-col tracking-wide font-extrabold text-[1.05vw]">
                     <p>RUSANGU</p>
                     <p>UNIVERSITY</p>
                 </div>

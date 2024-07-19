@@ -39,17 +39,17 @@ const Academics = () => {
       <div className="w-full h-[65%] flex gap-x-6 imgScaleDown">
         {academicData.map((item, idx) => (
           <div key={item.id} className="w-1/3 h-full deep-shadow relative text-white">
-            <p className="absolute top-3 left-3 z-20 font-black text-[1.1vw]">{item.subText}</p>
+            <p className="absolute top-3 left-3 z-20 font-black tracking-wide text-[1.1vw]">{item.subText}</p>
             <div className="w-full h-full absolute overflow-hidden">
               <img className="w-full h-full object-cover scaleImage scale-[1.5]" alt={item.alt} src={item.image} />
               <div className="w-full h-full absolute top-0 left-0 z-10 bg-[rgba(0,0,0,0.5)]"></div>
             </div>
             <div className="absolute z-10 bottom-3 left-3 flex flex-col gap-y-4">
-              <p className="tracking-tight font-light max-w-[90%] text-[0.75vw] text-justify">
+              <p className="tracking-normal font-[400] max-w-[90%] text-[0.75vw] text-justify">
                 {item.text}
               </p>
               <div className="flex items-center gap-x-2">
-                <p className="font-extrabold hover:underline cursor-pointer">EXPLORE</p>
+                <p className="font-bold hover:underline cursor-pointer">EXPLORE</p>
                 <FontAwesomeIcon icon={faChevronRight} />
               </div>
             </div>

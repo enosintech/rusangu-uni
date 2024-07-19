@@ -32,9 +32,9 @@ const Footer = () => {
             ))}
         </div>
         <div className="w-full h-[25%] bg-black text-white flex items-center justify-between common-padding">
-            <div className="flex gap-x-2 font-black text-[0.95vw]">
+            <div className="flex gap-x-2 font-black tracking-wide text-[0.95vw]">
                 <p>A Seventh-day Adventist Institution</p>
-                <p className="font-extralight">© {new Date().getFullYear()} Rusangu University. Rusangu, Monze.</p>
+                <p className="font-extralight tracking-tight">© {new Date().getFullYear()} Rusangu University. Rusangu, Monze.</p>
             </div>
             <div onClick={() => {
                 window.scrollTo({
