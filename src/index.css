@@ -44,7 +44,7 @@ body {
   }
 
   .common-padding {
-    @apply 2xl:px-52 xl:px-48 lg:px-40 md:px-36 px-28
+    @apply xl:px-[12vw] md:px-[10vw] px-[8vw]
   }
 }
 
